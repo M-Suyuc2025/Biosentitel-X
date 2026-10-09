@@ -3,9 +3,7 @@ export interface zonaRow {
     nombre: string;
     latitud: string | number;
     longitud: string | number;
-    temperatura: string | number;
-    acumulacion_agua: number | boolean;
-    total_sintomas: string | number;
+    fecha_craecion: Date | string;
 }
 
 export interface zonaRespuesta {
@@ -13,8 +11,5 @@ export interface zonaRespuesta {
     nombre: string;
     latitud: number;
     longitud: number;
-    temperatura: number;
-    acumulacion_agua: boolean;
-    total_sintomas: number;
-    nivel_riesgo: 'VERDE'|'AMARILLO'|'ROJO'
+    fecha_creacion: Date;
 }
